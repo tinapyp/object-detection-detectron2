@@ -73,6 +73,7 @@ This is a Flask application that uses Detectron2 for object detection on uploade
 - Metadata is registered for the custom dataset with class names in `app.py`.
 
 ## File Structure
+```
 ├── app.py # Main Flask application
 ├── requirements.txt # Python dependencies
 ├── saved_model # Directory containing model configuration and weights
@@ -85,4 +86,5 @@ This is a Flask application that uses Detectron2 for object detection on uploade
 │ ├── index.html # Main page template
 │ ├── result.html # Result page template
 └── README.md # This file
+```
 
