@@ -21,28 +21,25 @@ This is a Flask application that uses Detectron2 for object detection on uploade
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/yourusername/detectron2-flask-app.git
-    cd detectron2-flask-app
+    git clone https://github.com/tinapyp/tfod-with-detectron2.git
+    cd tfod-with-detectron2
     ```
 
-2. Create and activate a virtual environment:
-
-    ```sh
-    python -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-    ```
+2. Create and activate a virtual environment with python 3.10
 
 3. Install the required dependencies:
 
     ```sh
+    pip install -U torch torchvision
+    pip install cython pyyaml
+    pip install -U 'git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI'
+    python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
     pip install -r requirements.txt
     ```
 
 4. Ensure you have the Detectron2 dependencies installed:
 
     ```sh
-    pip install torch torchvision
-    pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu113/torch1.10/index.html
     ```
 
 ## Usage
