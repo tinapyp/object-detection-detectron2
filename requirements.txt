@@ -3,3 +3,4 @@ torchvision
 cython
 pyyaml
 pycocotools
+flask
