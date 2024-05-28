@@ -8,6 +8,7 @@ COPY . /app
 
 RUN pip install -U torch torchvision
 RUN pip install cython pyyaml
+RUN pip install -U pycocotools
 RUN pip install -U 'git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI'
 RUN python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
 RUN pip install -r requirements.txt
