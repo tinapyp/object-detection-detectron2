@@ -16,7 +16,7 @@ This is a Flask application that uses Detectron2 for object detection on uploade
 - Display detected objects with bounding boxes and labels.
 - List detected items in a table.
 
-## Installation
+## Usage
 
 1. Clone the repository:
 
@@ -25,37 +25,34 @@ This is a Flask application that uses Detectron2 for object detection on uploade
     cd tfod-with-detectron2
     ```
 
-2. Create and activate a virtual environment with python 3.10
-
-3. Install the required dependencies:
-
+2. Install the required dependencies:
     ```sh
-    pip install -U torch torchvision
-    pip install cython pyyaml
-    pip install -U 'git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI'
-    python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
     pip install -r requirements.txt
     ```
 
-4. Ensure you have the Detectron2 dependencies installed:
+3. Open your web browser and go to `http://127.0.0.1:5000`.
+
+4. Use the interface to upload an image or capture an image using your webcam.
+
+## Docker
+
+1. Clone the repository:
 
     ```sh
+    git clone https://github.com/tinapyp/tfod-with-detectron2.git
+    cd tfod-with-detectron2
     ```
 
-## Usage
-
-1. Run the Flask application:
-
+2. run docker compose
     ```sh
-    python app.py
+    docker compose up
     ```
 
-2. Open your web browser and go to `http://127.0.0.1:5000`.
+3. Open your web browser and go to `http://127.0.0.1:5000`.
 
-3. Use the interface to upload an image or capture an image using your webcam.
+4. Use the interface to upload an image or capture an image using your webcam.
 
 ## Configuration
-
 ### Model Configuration
 
 - The model configuration is specified in the `saved_model/efficient-det.yaml` file.
@@ -82,6 +79,8 @@ This is a Flask application that uses Detectron2 for object detection on uploade
 ├── templates
 │ ├── index.html # Main page template
 │ ├── result.html # Result page template
+├── Dockerfile
+└── docker-compose.yml
 └── README.md # This file
 ```
 
