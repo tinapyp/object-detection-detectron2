@@ -4,3 +4,4 @@ cython
 pyyaml
 pycocotools
 flask
+opencv-python
