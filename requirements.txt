@@ -1,3 +1,5 @@
-flask
-matplotlib
-opencv-python
+torch
+torchvision
+cython
+pyyaml
+pycocotools
