@@ -21,8 +21,8 @@ Make sure you have docker istalled,  otherwise you need to follow this step:
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/tinapyp/tfod-with-detectron2.git
-    cd tfod-with-detectron2
+    git clone https://github.com/tinapyp/object-detection-detectron2.git
+    cd object-detection-detectron2
     ```
 
 2. Install packages
