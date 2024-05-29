@@ -22,16 +22,14 @@ Make sure you have docker istalled,  otherwise you need to follow this step:
 
     ```sh
     git clone https://github.com/tinapyp/object-detection-detectron2.git
+    git lfs fetch
     cd object-detection-detectron2
     ```
 
 2. Install packages
     ``` sh
-    pip install -U torch torchvision
-    pip install cython pyyaml
-    pip install -U 'git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI'
-    python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
     pip install -r requirements.txt
+    python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
     ```
 3. Run App
     ```sh
@@ -47,6 +45,7 @@ Make sure you have docker istalled,  otherwise you need to follow this step:
 
     ```sh
     git clone https://github.com/tinapyp/tfod-with-detectron2.git
+    git lfs fetch
     cd tfod-with-detectron2
     ```
 
